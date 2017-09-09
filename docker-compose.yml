@@ -1,0 +1,14 @@
+app:
+  build: .
+  command: bundle exec jekyll serve --host=0.0.0.0
+  ports:
+    - '4000:4000'
+  volumes:
+    - .:/app
+  volumes_from:
+    - bundled_gems
+
+bundled_gems:
+  image: busybox
+  volumes:
+    - /bundled_gems
