@@ -4,3 +4,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+sass:
+  sourcemap: true

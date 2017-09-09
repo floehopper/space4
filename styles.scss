@@ -1,0 +1,50 @@
+---
+---
+
+@import "bulma.scss";
+
+header#main {
+  @extend .hero;
+  @extend .is-dark;
+  @extend .hero-body;
+
+  > div {
+    @extend .container;
+
+    h1 {
+      @extend .title;
+    }
+
+    p {
+      @extend .subtitle;
+    }
+  }
+}
+
+footer#main {
+  @extend .footer;
+
+  > div {
+    @extend .container;
+
+    > div {
+      @extend .columns;
+
+      #left {
+        @extend .column;
+
+        > div {
+          @extend .content;
+        }
+      }
+
+      #right {
+        @extend .column;
+
+        > div {
+          @extend .box;
+        }
+      }
+    }
+  }
+}
